@@ -1,0 +1,118 @@
+
+/* Global Layout */
+* { 
+  box-sizing: border-box;
+} 
+/* Type Selectors */ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+header {
+  padding: 1em;
+}
+footer {
+  padding-top: 1.5em;
+}
+.main-nav a {
+  display: block;
+  margin: .5em auto;
+  padding: .5em 0;
+  background-color: white;
+  color: #303030;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  padding: 0 1em;
+}
+p {
+  font-weight: 300;
+}
+h3 {
+  font-weight: 400;
+}
+.portfolio-section p {
+  padding: 0 1em;
+}
+/* Class/Descendant/ID Selectors */
+.section-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 2.5em 0 2.5em 0;
+}
+.box {
+  padding: .5em 0;
+}
+.profile-image {
+  padding: 2em 0em .5em;
+  width: 70%;
+}
+.portfolio-section {
+  background: white;
+  padding: 1em 0;
+}
+.skills-section,
+.contact-section {
+  padding: 0 1em;
+}
+.nav {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  color: #303030;
+}
+.portfolio-section,
+.contact-section {
+  margin: 1em 0 3em; 
+}
+.name-small {
+  font-size: 1em;
+  margin: 0;
+}
+.footer {
+  margin: auto 0;
+}
+.home, 
+.portfolio, 
+.skills, 
+.contact {
+  display: none;
+}
+/* Flex */
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  border-top: 1px solid gray;
+  margin: 0 auto;
+  width: 90vw;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+  .hide {
+    display: none;
+  }
+  .home, 
+  .portfolio, 
+  .skills, 
+  .contact {
+  display: flex;
+}
+}
+@media screen and (min-width: 1024px) {
+  .hide {
+    display: none;
+  }
+}
