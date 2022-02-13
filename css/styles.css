@@ -18,6 +18,9 @@ header {
 .main-header {
   margin: 0 auto;
 }
+.banner {
+  padding: 1em;
+}
 footer {
   padding: 1.5em 0;
   margin: 0 auto;
@@ -87,13 +90,17 @@ h3 {
   margin: 0;
   padding-top: 8px;
 }
-
+.footer {
+    display: none;
+}
 /* Flexbox */
 .main-header,
 .footer-section {
   display: flex;
 }
-
+.footer-section {
+  justify-content: space-between;
+}
 .main-header {
   flex-direction: column;
 }
@@ -134,6 +141,7 @@ h3 {
   }
   .banner {
     flex-basis: 0;
+    padding: 0 2em;
   }
   .description {
     flex-grow: 1.4;
@@ -143,6 +151,7 @@ h3 {
   }
   .flex-container {
     flex-wrap: wrap;
+    padding: 0 1.5em;
   }
   .banner-section {
     flex-direction: row-reverse;
@@ -176,6 +185,7 @@ h3 {
   }
   .main-header {
     flex-direction: row;
+    padding: 0 1em;
   }
   .name {
     margin-right: auto;
