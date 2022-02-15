@@ -28,7 +28,7 @@ footer {
   width: 90vw;
 }
 .main-nav li {
-  margin: .5em 0;
+  margin: .5em 1em;
   background-color: #e6e6fa;
   color: black;
 }
@@ -140,7 +140,6 @@ h3 {
     flex: 1 50%;
   }
   .banner {
-    flex-basis: 0;
     padding: 0 2em;
   }
   .description {
